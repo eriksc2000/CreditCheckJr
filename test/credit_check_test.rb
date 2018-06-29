@@ -5,12 +5,16 @@ require "./lib/credit_check"
 class CreditCheckTest < Minitest::Test 
   
   def test_it_exists
+
     credit_check = CreditCheck.new
+
+
     
     assert_instance_of CreditCheck, credit_check
   end
   
   def test_it_changes_to_array_and_reverses
+
     credit_check = CreditCheck.new
     credit_card = 4929735477250543
     
@@ -67,6 +71,8 @@ class CreditCheckTest < Minitest::Test
     assert_equal "The number #{card_number} is invalid", credit_check.valid_number(81)
   end 
   
+
+    
 end
   
   
